@@ -5,7 +5,7 @@ public class Reverse {
     private String string = "";
 
     public Reverse(String string) {
-        this.string = string;
+        this.string = getContent(string);
     }
     
     public String getContent(String string) {
