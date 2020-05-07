@@ -14,7 +14,7 @@ public class Reverse {
         char[] newString = new char[str.length()];
 
         for(int i = 0; i < str.length(); i++) {
-            newString[i] = oldString[str.length() - i];
+            newString[i] = oldString[(str.length() - 1) - i];
         }
 
         string = String.valueOf(newString);
