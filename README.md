@@ -1,15 +1,14 @@
 # java-spring-rest-test
 
-# Dependencies:
+## Dependencies:
 
     1. Maven 4.0.0
     2. Java Development Kit 8 or higher
     3. Spring 2.2.6
 
-# HOW TO RUN:
+## How to run:
 
-    1. On Terminal, make sure the root is **/app**
-    2. On Terminal, enter the following:
+    On Terminal, make sure the root is **/app**, then enter the following:
     ```
     ./mvnw spring-boot:run
     ```
