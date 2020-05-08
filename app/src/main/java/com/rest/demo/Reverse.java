@@ -5,10 +5,10 @@ public class Reverse {
     private String string = "";
 
     public Reverse(String string) {
-        this.string = getContent(string);
+        this.string = setContent(string);
     }
     
-    public String getContent(String str) {
+    public String setContent(String str) {
 
         char[] oldString = str.toCharArray();
         char[] newString = new char[str.length()];
@@ -20,5 +20,9 @@ public class Reverse {
         string = String.valueOf(newString);
 
         return string;
+    }
+
+    public String getContent() {
+        return this.string;
     }
 }
