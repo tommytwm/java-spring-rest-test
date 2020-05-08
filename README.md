@@ -11,9 +11,9 @@ On Terminal, make sure the root is **/app**, then enter the following:
 ./mvnw spring-boot:run
  ```
 Running this should host your Spring Boot application on your local host port. **For example: http://localhost:8080/**
-Enter **http://localhost:{0000}/reverse/{string}** on your browser - replace **0000** with your local host port and **string** with the desired string to reverse.
+Enter **http://localhost:{0000}/reverse/{string}** on your browser - replace **{0000}** with your local host port and **{string}** with the desired string to reverse.
 
-The output should be a json representation of the reversed string. For example, given the URI: **http://localhost:8080/reverse**, it should output:
+The output should be a json representation of the reversed string. For example, given the URI: **http://localhost:{0000}/reverse**, it should output:
 ```
 content: esrever
 ```
@@ -21,6 +21,8 @@ content: esrever
 ### Development Process:
 I started by creating an empty Maven project on VSCode by making use of the extension in VSCode marketplace and pushing that
 as an initial commit on my Github repo. After taking some cues from MVC (Model-View-Controller) design principles, I decided to start by making a model to store a string field, and a method to handle reversal of a string input. After that, I construced a controller that maps endpoints to the method(s) that call the model.
+
+After implementation, I wrote some unit tests to ensure that core functionality works, as well as checking if the implementation was able to handle some edge cases, like if the input was simply integers, or if it had whitespace. This ensures that should this spring boot application be expanded, we will be able to detect if core functionality has been broken.
 
 ### TASK:
 
