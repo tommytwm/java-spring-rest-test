@@ -4,10 +4,14 @@ public class Reverse {
     
     private String string = "";
 
+    /* When controller calls the constructor with a string input, it calls the setContent method with the string
+    *  to reverse the string. The set value for the string field for Reverse object would be the reverse of the input.
+    */
     public Reverse(String string) {
         this.string = setContent(string);
     }
     
+    // Setter
     public String setContent(String str) {
 
         char[] oldString = str.toCharArray();
@@ -22,6 +26,7 @@ public class Reverse {
         return string;
     }
 
+    // Getter
     public String getContent() {
         return this.string;
     }
