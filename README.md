@@ -13,7 +13,7 @@ On Terminal, make sure the root is **/app**, then enter the following:
 Running this should host your Spring Boot application on your local host port. **For example: http://localhost:8080/**
 Enter **http://localhost:{0000}/reverse/{string}** on your browser - replace **{0000}** with your local host port and **{string}** with the desired string to reverse.
 
-The output should be a json representation of the reversed string. For example, given the URI: **http://localhost:{0000}/reverse**, it should output:
+The output should be a json representation of the reversed string. For example, given the URI: **http://localhost:{0000}/reverse/reverse**, it should output:
 ```
 content: esrever
 ```
